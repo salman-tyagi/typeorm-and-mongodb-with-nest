@@ -12,7 +12,7 @@ import { User } from './users/user.entity';
       type: 'mongodb',
       url: 'mongodb://localhost:27017/typeorm-mongodb-nest',
       database: 'typeorm-mongodb-nest',
-      entities: [],
+      entities: [User],
       synchronize: true, // 'true' for development only
     }),
     TypeOrmModule.forFeature([User]),
